@@ -37,3 +37,8 @@
 - http://www.independent.co.uk/news/business/analysis-and-features/the-impossible-price-of-a-house-deposit-a6674521.html
 - http://stackoverflow.com/questions/396145/how-to-vertically-center-a-div-for-all-browsers
 - http://www.cityam.com/232024/london-house-prices-first-time-buyers-pay-91000-deposit-as-fewer-get-on-the-property-ladder-in-2015
+- http://moneyweek.com/london-property-market-is-heading-for-a-fall/
+- http://www.independent.co.uk/voices/the-housing-bubble-is-finally-bursting-heres-what-that-means-for-you-a7020556.html
+- http://www.biznews.com/columnists/bloomberg-view/2016/04/06/bloomberg-view-london-property-bubble-to-burst-painful-correction-coming/
+- http://www.thisismoney.co.uk/money/comment/article-3583698/DAN-HYDE-Warning-signs-housing-bubble-POP.html
+- http://www.cnbc.com/2016/06/06/bubble-or-boom-heres-what-you-really-need-to-know-about-london-property.html
