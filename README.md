@@ -1,6 +1,12 @@
 # When can I buy a house?
 ## A simple one-pager to show users when they can afford an average London deposit and offer advice.
 
+### Objectives
+
+- Use real-world figures for average deposit sizes, the rate at which they grow, and inflation, in order to shock visitors into taking saving and investing their money seriously. If they don't think about saving for a deposit seriously until they want to buy a house (say, in their mid-30s) it could already be too late.
+- Communicate that the earlier you start thinking about these things and acting on them, the more likely it is that you'll be able to buy a house within a reasonable time frame.
+- Establish basic building blocks of financial planning, such as budgeting, 'growing the gap', and passive investments, with links to resources - as well as questioning whether homeownership is really the best idea.
+
 ### Requirements
 
 - Accepts user input about their existing savings, regular monthly savings, and interest rates, and returns a results page with helpful links based on the amounts provided.
