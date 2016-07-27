@@ -24,7 +24,7 @@
 - Edit graph so that, if the two lines do cross over, the graph only shows one year past that point.
 - Refactor to remove jQuery and Bootstrap.
 - Add adaptive design so that page displays properly on mobile as well as desktop.
-- Remove chart.js and write new chart-drawing implementation using SVG rather than canvas. 
+- Remove dependence on chart.js and write new chart-drawing implementation using SVG rather than canvas. 
 
 ### Reference materials
 
