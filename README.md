@@ -14,6 +14,9 @@
 - If users don't have enough money but are saving/investing enough, it tells them when they'll be able to afford a deposit, and recommends some ways that could make that sooner (looking at shared ownership, investing money better, saving more through budgeting).
 - If users don't have enough money and aren't saving/investing enough, sends links to websites about budgeting, finding better jobs, and so on.
 - Allows users to share their results on social media.
+- Add pages (About, Resources, etc) to add further information.
+- Add a disclaimer noting that future projections are not guaranteed to be accurate and that the website is intended to promote long-term thinking about personal finance.
+- Add a header linking to About/Resources/etc and a footer with 'Steve Hopkinson 2016'.
 
 ### Improvements
 
@@ -21,6 +24,7 @@
 - Edit graph so that, if the two lines do cross over, the graph only shows one year past that point.
 - Refactor to remove jQuery and Bootstrap.
 - Add adaptive design so that page displays properly on mobile as well as desktop.
+- Remove chart.js and write new chart-drawing implementation using SVG rather than canvas. 
 
 ### Reference materials
 
