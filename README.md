@@ -1,5 +1,5 @@
 # When can I buy a house?
-## A simple one-pager to show users when they can afford an average London deposit and offer advice.
+## A simple one-pager to show users when they can afford an average London deposit and offer advice to help get on the property ladder sooner.
 
 ### Objectives
 
