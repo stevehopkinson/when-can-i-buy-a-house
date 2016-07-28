@@ -11,3 +11,21 @@ function getDepositData(currentSavings, monthlySavings, savingsGrowth, currentDe
 	
 	return years;
 }
+
+function buildTable(depositData) {
+	var yearRow = "<tr><th>Year:</th>"
+	var savingsRow = "<tr><th>Projected savings:</th>"
+	var depositRow = "<tr><th>Projected average deposit:</th>"
+	
+	for (var item of depositData) {
+		yearRow += "<td>" + item.year + "</td>";
+		savingsRow += "<td>" + item.savings + "</td>";
+		depositRow += "<td>" + item.deposit + "</td>";
+	}
+	
+	yearRow += "</tr>";
+	savingsRow += "</tr>";
+	depositRow += "</tr>";
+	
+	return "<table>" + yearRow + savingsRow + depositRow + "</table>";;
+}
