@@ -29,3 +29,30 @@ function buildTable(depositData) {
 	
 	return "<table>" + yearRow + savingsRow + depositRow + "</table>";
 }
+
+function percentBetween(x, start, end) {
+	return ((x - start) / (end - start)) * 100;
+}
+
+function buildGraph(depositData) {
+	var minYear = depositData[0].year; 
+	var maxYear = depositData.slice(-1)[0].year;
+	var maxValue = Math.max(depositData.slice(-1)[0].savings, depositData.slice(-1)[0].deposit);
+	
+	var axes = "";
+	
+	var savingsLine = "";
+	for (var item of depositData) {
+		var cx = Math.round(percentBetween(item.year, minYear, maxYear));
+		var cy = Math.round(100 - percentBetween(item.savings, 0, maxValue));
+		savingsLine += "<circle cx ='" + cx + "%' cy='" + 100 - cy + "%' r = '4' fill='rgb(28,144,243)' />"
+	}
+	
+	var depositLine = "";
+	for (var item of depositData) {
+		var cx = Math.round(percentBetween(item.year, minYear, maxYear));
+		var cy = Math.round(100 - percentBetween(item.deposit, 0, maxValue));
+		savingsLine += "<circle cx ='" + cx + "%' cy='" + 100 - cy + "%' r = '4' fill='rgb(205,75,91)' />"
+	}
+	return savingsLine + depositLine;
+}
