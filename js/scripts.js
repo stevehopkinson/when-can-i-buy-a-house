@@ -45,14 +45,14 @@ function buildGraph(depositData) {
 	for (var item of depositData) {
 		var cx = Math.round(percentBetween(item.year, minYear, maxYear));
 		var cy = Math.round(100 - percentBetween(item.savings, 0, maxValue));
-		savingsLine += "<circle cx ='" + cx + "%' cy='" + 100 - cy + "%' r = '4' fill='rgb(28,144,243)' />"
+		savingsLine += "<circle cx ='" + cx + "%' cy='" + cy + "%' r = '4' fill='rgb(28,144,243)' />\n"
 	}
 	
 	var depositLine = "";
 	for (var item of depositData) {
 		var cx = Math.round(percentBetween(item.year, minYear, maxYear));
 		var cy = Math.round(100 - percentBetween(item.deposit, 0, maxValue));
-		savingsLine += "<circle cx ='" + cx + "%' cy='" + 100 - cy + "%' r = '4' fill='rgb(205,75,91)' />"
+		depositLine += "<circle cx ='" + cx + "%' cy='" + cy + "%' r = '4' fill='rgb(205,75,91)' />\n"
 	}
 	return savingsLine + depositLine;
 }
