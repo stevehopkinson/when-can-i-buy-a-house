@@ -27,5 +27,5 @@ function buildTable(depositData) {
 	savingsRow += "</tr>";
 	depositRow += "</tr>";
 	
-	return "<table>" + yearRow + savingsRow + depositRow + "</table>";;
+	return "<table>" + yearRow + savingsRow + depositRow + "</table>";
 }
