@@ -42,3 +42,4 @@
 - http://www.biznews.com/columnists/bloomberg-view/2016/04/06/bloomberg-view-london-property-bubble-to-burst-painful-correction-coming/
 - http://www.thisismoney.co.uk/money/comment/article-3583698/DAN-HYDE-Warning-signs-housing-bubble-POP.html
 - http://www.cnbc.com/2016/06/06/bubble-or-boom-heres-what-you-really-need-to-know-about-london-property.html
+- https://www.hometrack.com/uk
