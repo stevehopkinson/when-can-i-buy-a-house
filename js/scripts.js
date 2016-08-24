@@ -1,38 +1,6 @@
-function getDepositData(currentSavings, monthlySavings, savingsGrowth, currentDeposit, depositGrowth) {
-	var currentYear = new Date().getFullYear();
-	var years = [{year: currentYear, savings: Math.round(currentSavings), deposit: Math.round(currentDeposit)}];
-	
-	while (currentSavings < currentDeposit && years.length < 40) {
-		currentSavings += (currentSavings / 100) * savingsGrowth + monthlySavings * 12;
-		currentDeposit += (currentDeposit / 100) * depositGrowth;
-		currentYear++;
-		years.push({year: currentYear, savings: Math.round(currentSavings), deposit: Math.round(currentDeposit)});
-	}
-	
-	return years;
-}
-
-function buildTable(depositData) {
-	var yearRow = "<tr><th>Year:</th>"
-	var savingsRow = "<tr><th>Projected savings:</th>"
-	var depositRow = "<tr><th>Projected average deposit:</th>"
-	
-	for (var item of depositData) {
-		yearRow += "<td>" + item.year + "</td>";
-		savingsRow += "<td>" + item.savings + "</td>";
-		depositRow += "<td>" + item.deposit + "</td>";
-	}
-	
-	yearRow += "</tr>";
-	savingsRow += "</tr>";
-	depositRow += "</tr>";
-	
-	return "<table>" + yearRow + savingsRow + depositRow + "</table>";
-}
-
-function percentBetween(x, start, end) {
-	return ((x - start) / (end - start)) * 100;
-}
+var currentDeposit = 70000;
+var depositGrowth = 5;
+var button = document.getElementById('submitButton');
 
 function getDepositData(currentSavings, monthlySavings, savingsGrowth, currentDeposit, depositGrowth) {
 	var currentYear = new Date().getFullYear();
@@ -70,6 +38,7 @@ function buildTable(depositData) {
 }
 
 function percentBetween(x, start, end) {
+	// Returns a percentage representing the location of x relative to start (0) and end (100) points
 	return ((x - start) / (end - start)) * 100;
 }
 
@@ -122,4 +91,12 @@ function buildGraph(depositData) {
 	
 	// Build the chart object and return it
 	return chartOpen + containerOpen + depositLine + savingsLine + containerClose + savingsPoints + depositPoints + axes + chartClose;
+}
+
+button.onclick = function() {
+	var currentSavings = document.getElementById('currentSavings').value;
+	var monthlySavings = document.getElementById('monthlySavings').value;
+	var savingsGrowth = document.getElementById('annualGrowth').value;
+	
+	document.body.innerHTML += buildGraph(getDepositData(currentSavings, monthlySavings, annualGrowth, currentDeposit, depositGrowth));
 }
