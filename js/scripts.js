@@ -96,7 +96,7 @@ function buildGraph(depositData) {
 button.onclick = function() {
 	var currentSavings = document.getElementById('currentSavings').value;
 	var monthlySavings = document.getElementById('monthlySavings').value;
-	var savingsGrowth = document.getElementById('annualGrowth').value;
+	var savingsGrowth = document.getElementById('savingsGrowth').value;
 	
-	document.body.innerHTML += buildGraph(getDepositData(currentSavings, monthlySavings, annualGrowth, currentDeposit, depositGrowth));
+	document.body.innerHTML += buildGraph(getDepositData(currentSavings, monthlySavings, savingsGrowth, currentDeposit, depositGrowth));
 }
